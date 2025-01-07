@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knit Corteiz Rose</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #333;
+        }
+        .price {
+            text-align: center;
+            font-size: 1.5em;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        .options {
+            margin-top: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        select, button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .buy-button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .buy-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Knit Corteiz Rose</h1>
+            <p>Choisissez votre taille, votre méthode de paiement, et passez commande !</p>
+        </div>
+
+        <div class="price">
+            Prix : 129,99 €
+        </div>
+
+        <div class="gallery">
+            <img src="https://s1.qwant.com/thumbr/474x338/b/9/0095892e9f5c3094fc621b810f68d949bb2d6e06442488b73d70e5dc0ec15e/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.gWYwdH2ZEkw36AyeterbMQHaFS%26pid%3DApi&q=0&b=1&p=0&a=0" alt="Knit Corteiz Rose - Image 1">
+            <img src="https://www.crtzrtw.eu/wp-content/uploads/2024/02/CSTARMOHAIRKNITSWEATER_480x480.webp" alt="Knit Corteiz Rose - Image 2">
+        </div>
+
+        <div class="options">
+            <label for="size">Choisissez votre taille :</label>
+            <select id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+
+            <label for="payment">Sélectionnez le mode de paiement :</label>
+            <select id="payment">
+                <option value="carte-de-credit">Carte de Crédit</option>
+                <option value="paypal">PayPal</option>
+                <option value="virement-bancaire">Virement Bancaire</option>
+            </select>
+
+            <button class="buy-button">Acheter maintenant</button>
+        </div>
+    </div>
+</body>
+</html>
